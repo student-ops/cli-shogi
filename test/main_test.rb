@@ -9,10 +9,13 @@ class KomaTest < Minitest::Test
     
     def test_baxn
         baxn = Baxn.new
+        baxn.command(5,8,7)
         baxn.render
     end
     # def test_change
     #     hu = Koma.new('桂')
     #     assert '歩',hu.name_change(hu.type)
-    # end
+    # end 9 = 0 8 = 1 ... 1=8
+    #7六歩　= 5,2,1
+    #5八飛車　=7,4,7
 end
